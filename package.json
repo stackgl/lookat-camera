@@ -1,0 +1,41 @@
+{
+  "name": "lookat-camera",
+  "version": "1.0.0",
+  "description": "Simple \"lookat\" camera abstraction built on top of gl-matrix",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "budo demo.js:bundle.js --transform glslify | garnish",
+    "bundle": "browserify demo.js -t glslify -o bundle.js"
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {
+    "gl-mat4": "^1.1.4"
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "bunny": "^1.0.1",
+    "canvas-fit": "^1.4.0",
+    "garnish": "^2.1.3",
+    "gl-context": "^0.1.1",
+    "gl-geometry": "^1.1.1",
+    "gl-shader": "^4.0.4",
+    "glslify": "^2.1.2",
+    "normals": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stackgl/lookat-camera.git"
+  },
+  "keywords": [
+    "ecosystem:stackgl"
+  ],
+  "homepage": "https://github.com/stackgl/lookat-camera",
+  "bugs": {
+    "url": "https://github.com/stackgl/lookat-camera/issues"
+  }
+}
